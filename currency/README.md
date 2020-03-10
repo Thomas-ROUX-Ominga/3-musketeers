@@ -56,7 +56,7 @@ Example of basic output : *1 USD = 0.00012330851543945921 BTC*
 ```sh
 ❯ node cli.js [Amount] [From Currency] [To Currency]
 ```
-Input: *node cli.js 1 eur usd*
+Input: *node cli.js 1 eur usd*</br>
 Output: *1 EUR = 1.1456 USD*
 
 ## 📜 DataBase
