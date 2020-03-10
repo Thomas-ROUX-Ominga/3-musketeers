@@ -5,6 +5,7 @@ const ora = require('ora');
 
 const argv = process.argv.slice(2);
 
+/* Function --help */
 function help () {
   console.log(
     [
@@ -20,6 +21,7 @@ function help () {
 
 const spinner = ora('Fetching exchange data..');
 
+/* try-catch function to test the API in the other file index.js */
 async function start (opts) {
   try {
     const {amount, from, to} = opts;
@@ -41,6 +43,7 @@ if (argv.indexOf('--help') !== - 1) {
 
 spinner.start();
 
+/* convert the text format */
 const opts = {
   'amount': argv[0] || 1,
   'from': (argv[1] || 'USD').toUpperCase(),
